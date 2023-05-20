@@ -11,17 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.to_do.R;
+import com.example.to_do.model.ModelResponse;
 import com.example.to_do.model.Model_To_Do;
 
 import java.util.List;
 
 public class AdapterToDo extends RecyclerView.Adapter<AdapterToDo.VH_to_do>{
     private Context ctx;
-    private List<Model_To_Do>list_to_do;
+    private List<Model_To_Do>list_todo;
 
-    public  AdapterToDo(Context ctx, List<Model_To_Do> list_to_do) {
+    public  AdapterToDo(Context ctx, List<Model_To_Do> list_todo) {
         this.ctx = ctx;
-        this.list_to_do = list_to_do;
+        this.list_todo = list_todo;
     }
 
     @NonNull
@@ -33,7 +34,7 @@ public class AdapterToDo extends RecyclerView.Adapter<AdapterToDo.VH_to_do>{
 
     @Override
     public void onBindViewHolder(@NonNull VH_to_do holder, int position) {
-        Model_To_Do mk=list_to_do.get(position);
+        Model_To_Do mk=list_todo.get(position);
         holder.tvid.setText(mk.getId());
         holder.tvjudul.setText(mk.getJudul());
         holder.tvprioritas.setText(mk.getPrioritas());
@@ -43,7 +44,7 @@ public class AdapterToDo extends RecyclerView.Adapter<AdapterToDo.VH_to_do>{
 
     @Override
     public int getItemCount() {
-        return list_to_do.size();
+        return list_todo.size();
     }
 
 

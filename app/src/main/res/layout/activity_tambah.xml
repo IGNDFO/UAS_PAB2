@@ -54,13 +54,14 @@
         android:hint="Seberapa Penting"
         android:layout_below="@id/et_hari"
         android:textSize="21sp"/>
+
     <Button
+        android:id="@+id/btn_tambah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simpan"
-        android:id="@+id/btn_ubah"
         android:layout_below="@id/et_prioritas"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:text="Simpan" />
 
 
 

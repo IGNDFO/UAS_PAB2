@@ -31,7 +31,7 @@ private FloatingActionButton fab_tambah;
 private ProgressBar pb;
 private RecyclerView.Adapter ad_To_do;
 private RecyclerView.LayoutManager lm_to_do;
-private List<ModelResponse> list_to_do=new ArrayList<>();
+private List<Model_To_Do> list_to_do=new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

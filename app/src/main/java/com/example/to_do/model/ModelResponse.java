@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ModelResponse {
     private String kode,pesan;
-    private List<ModelResponse> data;
+    private List<Model_To_Do> data;
 
     public String getKode() {
         return kode;
@@ -15,7 +15,7 @@ public class ModelResponse {
         return pesan;
     }
 
-    public List<ModelResponse> getData() {
+    public List<Model_To_Do> getData() {
         return data;
     }
 }
