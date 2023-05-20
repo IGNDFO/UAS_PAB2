@@ -56,7 +56,7 @@ public class AdapterToDo extends RecyclerView.Adapter<AdapterToDo.VH_to_do>{
             tvid=  itemView.findViewById(R.id.tv_id);
             tvjudul=  itemView.findViewById(R.id.tv_judul);
             tvprioritas=  itemView.findViewById(R.id.tv_prioritas);
-            tvisi=  itemView.findViewById(R.id.tv_prioritas);
+            tvisi=  itemView.findViewById(R.id.tv_isi);
 
         }
     }

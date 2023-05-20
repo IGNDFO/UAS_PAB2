@@ -14,10 +14,10 @@
         android:theme="@style/Theme.TO_DO"
         tools:targetApi="31">
         <activity
-            android:name=".tambah"
+            android:name=".Activity.tambah"
             android:exported="false" />
         <activity
-            android:name=".ubah"
+            android:name=".Activity.ubah"
             android:exported="false" />
         <activity
             android:name=".Activity.MainActivity"

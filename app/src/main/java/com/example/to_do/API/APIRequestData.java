@@ -1,7 +1,6 @@
 package com.example.to_do.API;
 
 
-import com.example.to_do.model.Model_To_Do;
 import  com.example.to_do.model.ModelResponse;
 
 import retrofit2.Call;
@@ -17,7 +16,7 @@ public interface APIRequestData {
     @FormUrlEncoded
     @POST("create.php")
     Call<ModelResponse>ardcreate(
-            @Field("id")String id,
+
             @Field("judul")String judul,
             @Field("isi")String asal,
             @Field("hari")String hari,

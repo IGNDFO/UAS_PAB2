@@ -44,7 +44,7 @@ private List<Model_To_Do> list_to_do=new ArrayList<>();
 
 
          lm_to_do = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        rv_to_do.setLayoutManager(lm_to_do);
+         rv_to_do.setLayoutManager(lm_to_do);
 
         fab_tambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,14 +59,13 @@ private List<Model_To_Do> list_to_do=new ArrayList<>();
 
     protected void  onResume(){
         super.onResume();
-        retrievekuliner();
+        retrieve_todo();
     }
 
-    public void retrievekuliner (){
+    public void retrieve_todo (){
         pb.setVisibility(View.VISIBLE);
 
         APIRequestData ARD= new RetroServer().konekretro().create(APIRequestData.class);
-//        Call<ModelResponse> proses=ARD.ardRetrieve();
         Call<ModelResponse> proses=ARD.ardRetrieve();
 
         proses.enqueue(new Callback<ModelResponse>() {
