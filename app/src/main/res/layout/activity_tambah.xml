@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.tambah"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tv_tambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:text=" Aktivitas Baru"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tambah"
+        android:hint="Masukan Nama kegiatan"
+        android:textSize="21sp"
+        android:id="@+id/et_judul"
+        android:layout_marginTop="3px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_isi"
+        android:layout_marginTop="3px"
+        android:hint="Mau Ngapain?"
+        android:layout_below="@id/et_judul"
+        android:textSize="21sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_hari"
+        android:layout_marginTop="6px"
+        android:hint="Hari Apa"
+        android:layout_below="@id/et_isi"
+        android:textSize="21sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_prioritas"
+        android:layout_marginTop="6px"
+        android:hint="Seberapa Penting"
+        android:layout_below="@id/et_hari"
+        android:textSize="21sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/btn_ubah"
+        android:layout_below="@id/et_prioritas"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>
