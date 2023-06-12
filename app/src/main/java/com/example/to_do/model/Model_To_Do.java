@@ -7,6 +7,9 @@ public class Model_To_Do {
     public String getId() {
         return id;
     }
+    public String getPrioritas() {
+        return prioritas;
+    }
 
     public String getJudul() {
         return judul;
@@ -20,8 +23,6 @@ public class Model_To_Do {
         return hari;
     }
 
-    public String getPrioritas() {
-        return prioritas;
-    }
+
 }
 

@@ -4,13 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
+    tools:context=".Activity.MainActivity "
+    android:background="@drawable/img_1"
+    android:alpha="1"
+    >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_to_do"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_list" />
+        tools:listitem="@layout/item_list"
+        android:alpha="1"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_tambah"
@@ -19,7 +24,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="32dp"
-        android:src="@drawable/ic_tambah"
+        android:src="@drawable/a"
         app:tint="@null"/>
 
 

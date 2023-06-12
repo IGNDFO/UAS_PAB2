@@ -8,17 +8,27 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="To Do List"
+        android:icon="@mipmap/logo1"
+        android:label="ANTI KETETER"
         android:supportsRtl="true"
         android:theme="@style/Theme.TO_DO"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.about"
+            android:exported="false"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.detail"
+            android:exported="false"
+            android:parentActivityName=".Activity.MainActivity" />
+        <activity
             android:name=".Activity.tambah"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Activity.MainActivity" />
         <activity
             android:name=".Activity.ubah"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Activity.MainActivity" />
         <activity
             android:name=".Activity.MainActivity"
             android:exported="false" />

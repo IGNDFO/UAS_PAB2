@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Activity.ubah"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:background="@drawable/img_5">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -37,17 +38,29 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_isi"
             android:layout_marginTop="3px"
-            android:hint="Ngapain"
+            android:hint="Jelasin Lebih Detail"
             android:layout_below="@id/et_judul"
             android:textSize="21sp"/>
-        <EditText
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Silakan masukan tanggal "
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:id="@+id/po"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/et_isi"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="11dp"
             android:id="@+id/et_hari"
-            android:layout_marginTop="6px"
-            android:hint="Hari Apa"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="9px"
+            android:text="Pilih tangggal"
             android:layout_below="@id/et_isi"
-            android:textSize="21sp"/>
+            android:textSize="21sp"
+            android:layout_toRightOf="@id/po"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,13 +69,14 @@
             android:hint="Seberapa Penting"
             android:layout_below="@id/et_hari"
             android:textSize="21sp"/>
+
         <Button
+            android:id="@+id/btn_ubah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Simpan"
-            android:id="@+id/btn_ubah"
             android:layout_below="@id/et_prioritas"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:text="Simpan" />
 
     </RelativeLayout>
 

@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Activity.tambah"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    android:background="@drawable/img_4">
 
 
     <TextView
@@ -18,6 +19,7 @@
         android:text=" Aktivitas Baru"
         android:textSize="25sp"
         android:textStyle="bold" />
+<!--        android:textColor="#FFFFFF"-->
 
 
 
@@ -35,17 +37,32 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_isi"
         android:layout_marginTop="3px"
-        android:hint="Mau Ngapain?"
+        android:hint="Jelasin Lebih Detail"
         android:layout_below="@id/et_judul"
         android:textSize="21sp"/>
-    <EditText
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Silakan masukan tanggal "
+        android:textSize="21sp"
+        android:id="@+id/po"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/et_isi"/>
+
+    <com.google.android.material.button.MaterialButton
+
         android:id="@+id/et_hari"
-        android:layout_marginTop="6px"
-        android:hint="Hari Apa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/et_isi"
-        android:textSize="21sp"/>
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/po"
+        app:cornerRadius="11dp"
+        android:backgroundTint="@color/black"
+        android:text="Pilih tangggal"
+        android:textSize="21sp" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

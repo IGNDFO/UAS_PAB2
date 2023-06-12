@@ -1,44 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <LinearLayout
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="8dp"
+    android:alpha="0.7">
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="6dp"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        android:background="@color/p"
+        >
         <TextView
             android:id="@+id/tv_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ID"
+            android:fontFamily="@font/q"
+            android:background="@android:color/transparent"
             android:visibility="gone"
             android:textSize="21sp" />
+        <TextView
+            android:id="@+id/tv_isi"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hari"
+            android:visibility="gone"
+            android:textSize="21sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEBERAPA PENTING   "
+            android:fontFamily="@font/q"
+            android:id="@+id/tvpenting"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
 
         <TextView
             android:id="@+id/tv_prioritas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/q"
+
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/tvpenting"
             android:text="prioritas"
+            android:textColor="#FF0000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HARUS NGELAKUIN     "
+
+            android:id="@+id/tvjudul"
             android:textSize="21sp"
-            android:textStyle="bold"/>
+            android:layout_below="@+id/tv_prioritas"
+            />
 
         <TextView
             android:id="@+id/tv_judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tv_prioritas"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/tvjudul"
             android:text="judul"
             android:textSize="21sp" />
 
         <TextView
-            android:id="@+id/tv_isi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="isi"
+            android:text="Tanggal                             "
+            android:id="@+id/tvisi"
             android:textSize="21sp"
-            android:maxLines="1"
+
+            android:layout_below="@+id/tv_judul"
             />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv_hari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_judul"
+
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/tvisi"
+            android:maxLines="1"
+            android:text="Hari"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>

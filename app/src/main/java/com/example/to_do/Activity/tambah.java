@@ -2,16 +2,24 @@ package com.example.to_do.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import com.example.to_do.API.APIRequestData;
 import com.example.to_do.API.RetroServer;
 import com.example.to_do.R;
 import com.example.to_do.model.ModelResponse;
+import com.google.android.material.button.MaterialButton;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -19,9 +27,14 @@ import retrofit2.Response;
 
 public class tambah extends AppCompatActivity {
 
-    private EditText etjudul,etisi,ethari,etprioritas;
-    private Button btntambah;
-    private  String judul,isi,hari,prioritas;
+    private EditText etjudul,etisi,etprioritas;
+    private Button btntambah ;
+    private MaterialButton ethari;
+    private  String judul,isi,hari,prioritas,tahun,bulan,tanggal;
+    private SimpleDateFormat dateFormatter;
+   private String choosenDate;
+   private  DatePickerDialog dpd;
+    Locale localeID = new Locale("in", "ID");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,14 +46,41 @@ public class tambah extends AppCompatActivity {
         ethari=findViewById(R.id.et_hari);
         etprioritas=findViewById(R.id.et_prioritas);
         btntambah=findViewById(R.id.btn_tambah);
+        ethari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                        Calendar kalender = Calendar.getInstance();
+               dpd = new DatePickerDialog
+                        (tambah.this, new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int month, int day) {
+                                tahun = Integer.toString(year);
+                                 bulan = Integer.toString(month + 1);
+                                 tanggal = Integer.toString(day);
+                                 choosenDate =  tanggal+"/" + bulan + "/" +tahun ;
+                                ethari.setText(choosenDate);
+                                ethari.setError(null);
+                            }
+                        }
+                                , kalender.get(Calendar.YEAR)
+                                , kalender.get(Calendar.MONTH)
+                                , kalender.get(Calendar.DAY_OF_MONTH));
+                        dpd.show();
+
+            }
+        });
 
         btntambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 judul=etjudul.getText().toString();
                 isi=etisi.getText().toString();
+
                hari=ethari.getText().toString();
+
                 prioritas=etprioritas.getText().toString();
+//                dateFormatter = new SimpleDateFormat("yyyy-MM-dd", localeID);
                 if(judul.trim().isEmpty()){
                     etjudul.setError("Nama Tidak Boleh Kosong");
                 } else if (isi.trim().isEmpty()) {
