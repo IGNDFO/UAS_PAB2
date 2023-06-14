@@ -59,7 +59,7 @@
         android:layout_marginTop="8dp"
         android:layout_toRightOf="@id/po"
         app:cornerRadius="11dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/gradient1"
         android:text="Pilih tangggal"
         android:textSize="21sp" />
 

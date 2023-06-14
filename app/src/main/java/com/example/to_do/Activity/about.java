@@ -20,7 +20,6 @@ public class about extends AppCompatActivity {
 
 
         ivFotoNando = findViewById(R.id.iv_foto_nando);
-        ivMdp= findViewById(R.id.iv_mdp);
 
 
         namaNando=findViewById(R.id.nama_nando);

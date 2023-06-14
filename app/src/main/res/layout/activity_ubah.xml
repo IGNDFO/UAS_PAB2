@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="11dp"
             android:id="@+id/et_hari"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/gradient1"
             android:layout_marginTop="9px"
             android:text="Pilih tangggal"
             android:layout_below="@id/et_isi"

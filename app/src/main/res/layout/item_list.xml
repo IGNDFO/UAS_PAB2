@@ -6,7 +6,8 @@
     xmlns:card_view="http://schemas.android.com/tools"
     card_view:cardBackgroundColor="@android:color/transparent"
     app:cardCornerRadius="8dp"
-    android:alpha="0.7">
+    android:alpha="0.8"
+    android:background="@drawable/btn">
 
 
     <RelativeLayout
@@ -14,7 +15,8 @@
         android:layout_height="wrap_content"
         android:padding="6dp"
         android:orientation="vertical"
-        android:background="@color/p"
+        android:background="@drawable/btn"
+
         >
         <TextView
             android:id="@+id/tv_id"
@@ -48,13 +50,13 @@
             android:id="@+id/tv_prioritas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/q"
+            android:fontFamily="@font/z"
 
             android:layout_marginLeft="7dp"
             android:layout_toRightOf="@+id/tvpenting"
             android:text="prioritas"
             android:textColor="#FF0000"
-            android:textSize="20dp"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
         <TextView

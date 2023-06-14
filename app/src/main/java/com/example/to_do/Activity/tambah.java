@@ -82,15 +82,15 @@ public class tambah extends AppCompatActivity {
                 prioritas=etprioritas.getText().toString();
 //                dateFormatter = new SimpleDateFormat("yyyy-MM-dd", localeID);
                 if(judul.trim().isEmpty()){
-                    etjudul.setError("Nama Tidak Boleh Kosong");
+                    etjudul.setError("JUDULNYA APA ");
                 } else if (isi.trim().isEmpty()) {
-                    etisi.setError("Asal Tidak Boleh Kosong");
+                    etisi.setError("TERUS U MAU NGAPAIN");
                 }else if (hari.trim().isEmpty()) {
-                    ethari.setError("Deskripsi Singkat Tidak Boleh Kosong");
+                    ethari.setError("IYA HARI APAAA");
                 }
                 else if (prioritas.trim().isEmpty()) {
-                etprioritas.setError("Deskripsi Singkat Tidak Boleh Kosong");
-                 }
+                    etprioritas.setError("SEBERAPA PENTING ITUUU");
+                }
                 else{
                     tambahisi();
                 }
