@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Silakan masukan tanggal "
-        android:textSize="21sp"
+        android:textSize="20sp"
         android:id="@+id/po"
         android:layout_marginTop="15dp"
         android:layout_below="@id/et_isi"/>
@@ -61,7 +61,7 @@
         app:cornerRadius="11dp"
         android:backgroundTint="@color/gradient1"
         android:text="Pilih tangggal"
-        android:textSize="21sp" />
+        android:textSize="19sp" />
 
     <EditText
         android:layout_width="match_parent"

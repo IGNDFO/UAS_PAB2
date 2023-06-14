@@ -13,8 +13,8 @@
     android:layout_height="wrap_content"
     android:textAlignment="center"
     android:layout_centerHorizontal="true"
-    android:textColor="@color/gradient1"
-    android:textSize="20dp"
+    android:textColor="@color/black"
+    android:textSize="22dp"
     android:text="Selamat datang di Aplikasi To Do List \n Kami memiliki Moto \n'Kalau bise besok kenapa harus sekarang'"/>
 
     <ImageView
